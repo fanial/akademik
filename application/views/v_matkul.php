@@ -3,8 +3,8 @@
   <!-- Content Header (Page header) -->
   <section class="content-header">
     <h1>
-      Dosen
-      <small>Kumpulan Data dosen</small>
+      Mata Kuliah
+      <small>Kumpulan Data Mata Kuliah</small>
     </h1>
 
 
@@ -20,10 +20,10 @@
       <div class="col-xs-12">
         <div class="box">
           <div class="box-header">
-            <h3 class="box-title">Tabel Dosen</h3>
+            <h3 class="box-title">Tabel Mata Kuliah</h3>
             <div class="box-tools">
               <div class="input-group input-group-sm">
-                <a href="<?= base_url() ?>index.php/dosen/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus">Tambah Data</i></a>
+                <a href="<?= base_url() ?>index.php/matkul/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus">Tambah Data</i></a>
               </div>
             </div>
           </div>
@@ -33,10 +33,11 @@
               <thead>
                 <tr>
                   <th>No</th>
-                  <th>ID Dosen</th>
-                  <th>Nama Dosen</th>
-                  <th>No. Telp</th>
-                  <th>Jabatan</th>
+                  <th>ID Mata Kuliah</th>
+                  <th>Mata Kuliah</th>
+                  <th>Waktu</th>
+                  <th>Dosen Pengampu</th>
+                  <th>Jurusan</th>
                   <th colspan='2'>Aksi</th>
                 </tr>
               </thead>
@@ -47,16 +48,17 @@
                 ?>
                   <tr>
                     <td><?= $no; ?></td>
-                    <td><?= $item->id_dosen; ?></td>
+                    <td><?= $item->id_matkul; ?></td>
+                    <td><?= $item->matkul; ?></td>
+                    <td><?= $item->waktu; ?></td>
                     <td><?= $item->nama_dosen; ?></td>
-                    <td><?= $item->tlp; ?></td>
-                    <td><?= $item->jabatan; ?></td>
+                    <td><?= $item->jurusan; ?></td>
 
                     <td> 
-                      <a href="<?= base_url() ?>dosen/update/<?= $item->id_dosen; ?>" class="btn btn-warning" role="button">Update</a>
+                      <a href="<?= base_url() ?>matkul/update/<?= $item->id_matkul; ?>" class="btn btn-warning" role="button">Update</a>
                     </td>
                     <td> 
-                      <a href="<?= base_url() ?>dosen/hapus/<?= $item->id_dosen; ?>" class="btn btn-danger" role="button">Delete</a>
+                      <a href="<?= base_url() ?>matkul/hapus/<?= $item->id_matkul; ?>" class="btn btn-danger" role="button">Delete</a>
                     </td>
                   </tr>
                 <?php

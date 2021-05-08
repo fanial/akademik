@@ -1,5 +1,5 @@
 <?php
-class M_Dosen extends CI_Model
+class M_dosen extends CI_Model
 {
   function TampilDosen()
   {
@@ -9,7 +9,7 @@ class M_Dosen extends CI_Model
       ->result();
   }
 
-  function GetId_dosen($id_dosen = '')
+  function GetID_dosen($id_dosen = '')
   {
     return $this->db->get_where('dosen', array('id_dosen' => $id_dosen))->row();
   }

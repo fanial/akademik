@@ -4,7 +4,7 @@
   <section class="content-header">
     <h1>
       Jurusan
-      <small>Kumpulan data-data jurusan</small>
+      <small>Kumpulan Data Jurusan</small>
     </h1>
 
 
@@ -23,7 +23,7 @@
             <h3 class="box-title">Tabel Jurusan</h3>
             <div class="box-tools">
               <div class="input-group input-group-sm">
-                <a href="<?php echo base_url() ?>index.php/jurusan/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus"> Data</i></a>
+                <a href="<?php echo base_url() ?>index.php/jurusan/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus">Tambah Data</i></a>
               </div>
             </div>
           </div>
@@ -32,7 +32,7 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th> No</th>
+                  <th>No</th>
                   <th>Kode Jurusan</th>
                   <th>Nama Jurusan</th>
                   <th>Kepala Program Studi</th>
