@@ -7,9 +7,9 @@
             <!-- Logo -->
             <a href="#" class="logo">
                 <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>AK</b>21</span>
+                <span class="logo-mini"><img src="<?php echo base_url() ?>assets/dist/img/logo-mini.gif" alt="Logo Mini"></span>
                 <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>SIMAK</b>2021</span>
+                <span class="logo-lg">Sistem Akademik</span>
             </a>
 
             <!-- Header Navbar -->
@@ -29,10 +29,10 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="<?php echo base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="<?php echo base_url() ?>assets/dist/img/avatar3.png" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
-                        <p>(username)</p>
+                        <p>username here</p>
                         <!-- Status -->
                         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
                     </div>
