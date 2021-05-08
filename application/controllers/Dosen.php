@@ -41,7 +41,7 @@ class Dosen extends CI_Controller
 
     function update($id_dosen)
     {
-        $data['ambil'] = $this->M_dosen->GetId_dosen($id_dosen);
+        $data['ambil'] = $this->M_dosen->GetID_dosen($id_dosen);
         $this->load->view('template/header');
         $this->load->view('template/sidebar');
         $this->load->view('v_update_dosen', $data);

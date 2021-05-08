@@ -29,7 +29,7 @@
                 <!-- Sidebar user panel (optional) -->
                 <div class="user-panel">
                     <div class="pull-left image">
-                        <img src="<?php echo base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="<?= base_url() ?>assets/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     </div>
                     <div class="pull-left info">
                         <p>(username)</p>
@@ -54,20 +54,20 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">SIMAK 2021</li>
                     <!-- Optionally, you can add icons to the links -->
-                    <li class=""><a href="<?php echo base_url() ?>index.php/welcome/index"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>index.php/welcome/index"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>index.php/mahasiswa/index"><i class="fa fa-graduation-cap"></i> <span>Mahasiswa</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>index.php/mahasiswa/index"><i class="fa fa-graduation-cap"></i> <span>Mahasiswa</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>index.php/jurusan/index"><i class="fa fa-university"></i> <span>Jurusan</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>index.php/jurusan/index"><i class="fa fa-university"></i> <span>Jurusan</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>index.php/dosen/index"><i class="fa fa-users"></i> <span>Dosen</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>index.php/dosen/index"><i class="fa fa-users"></i> <span>Dosen</span></a></li>
 
 
-                    <li class=""><a href="<?php echo base_url() ?>matkul.php"><i class="fa fa-book"></i> <span>Jadwal Kuliah</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>index.php/matkul/index"><i class="fa fa-book"></i> <span>Jadwal Kuliah</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>gantipw.php"><i class="fa fa-lock"></i> <span>Ganti Password</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>gantipw.php"><i class="fa fa-lock"></i> <span>Ganti Password</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>

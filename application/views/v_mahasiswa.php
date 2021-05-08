@@ -4,7 +4,7 @@
     <section class="content-header">
         <h1>
             Mahasiswa
-            <small>Kumpulan data-data mahasiswa</small>
+            <small>Kumpulan Data mahasiswa</small>
         </h1>
 
 
@@ -23,7 +23,7 @@
                         <h3 class="box-title">Tabel Mahasiswa</h3>
                         <div class="box-tools">
                             <div class="input-group input-group-sm">
-                                <a href="<?php echo base_url() ?>index.php/mahasiswa/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus"> Data</i></a>
+                                <a href="<?php echo base_url() ?>index.php/mahasiswa/tambah" class="btn-sm btn-primary pull-right" role="button"><i class="fa fa-plus">Tambah Data</i></a>
                             </div>
                         </div>
                     </div>
@@ -32,7 +32,7 @@
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th> No</th>
+                                    <th>No</th>
                                     <th>NIK</th>
                                     <th>Nama</th>
                                     <th>Jenis Kelamin</th>
