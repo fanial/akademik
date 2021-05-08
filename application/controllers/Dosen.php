@@ -32,39 +32,38 @@ class Dosen extends CI_Controller
         $data = array(
             'id_dosen' => $this->input->post('id_dosen'),
             'nama_dosen' => $this->input->post('nama_dosen'),
-            'tlp' => $this->input->post('nama_jurusan'),
+            'tlp' => $this->input->post('tlp'),
             'jabatan' => $this->input->post('jabatan')
         );
         $this->db->insert('dosen', $data);
         redirect('index.php/dosen/index');
     }
 
-    function update($id_jurusan)
+    function update($id_dosen)
     {
-        $data['ambil'] = $this->M_jurusan->GetId_jurusan($id_jurusan);
+        $data['ambil'] = $this->M_dosen->GetId_dosen($id_dosen);
         $this->load->view('template/header');
         $this->load->view('template/sidebar');
-        $this->load->view('v_update_jurusan', $data);
+        $this->load->view('v_update_dosen', $data);
         $this->load->view('template/footer');
     }
 
     function simpan_update()
     {
         $data = array(
-
-            'kode_jurusan' => $this->input->post('kode_jurusan'),
-            'nama_jurusan' => $this->input->post('nama_jurusan'),
-            'kaprodi' => $this->input->post('kaprodi')
+            'nama_dosen' => $this->input->post('nama_dosen'),
+            'tlp' => $this->input->post('tlp'),
+            'jabatan' => $this->input->post('jabatan')
         );
-        $id_jurusan = $this->input->post('id_jurusan');
-        $this->db->where('id_jurusan', $id_jurusan);
-        $this->db->update('jurusan', $data);
-        redirect('index.php/jurusan');
+        $id_dosen = $this->input->post('id_dosen');
+        $this->db->where('id_dosen', $id_dosen);
+        $this->db->update('dosen', $data);
+        redirect('index.php/dosen');
     }
 
-    function hapus($id_jurusan)
+    function hapus($id_dosen)
     {
-        $this->M_jurusan->HapusJurusan($id_jurusan);
-        redirect('index.php/jurusan');
+        $this->M_dosen->HapusDosen($id_dosen);
+        redirect('index.php/dosen');
     }
 }
