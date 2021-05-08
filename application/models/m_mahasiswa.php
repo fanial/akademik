@@ -1,5 +1,5 @@
 <?php
-class m_mahasiswa extends CI_Model
+class M_mahasiswa extends CI_Model
 {
     function TampilMahasiswa()
     {

@@ -22,12 +22,12 @@ class Mahasiswa extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_mahasiswa');
+		$this->load->model('M_mahasiswa');
 	}
 
 	function index()
 	{
-		$data['hasil'] = $this->m_mahasiswa->TampilMahasiswa();
+		$data['hasil'] = $this->M_mahasiswa->TampilMahasiswa();
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
 		$this->load->view('v_mahasiswa', $data);
@@ -58,7 +58,7 @@ class Mahasiswa extends CI_Controller
 
 	function update($nik)
 	{
-		$data['ambil'] = $this->m_mahasiswa->GetNik($nik);
+		$data['ambil'] = $this->M_mahasiswa->GetNik($nik);
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
 		$this->load->view('v_update_mahasiswa', $data);
@@ -83,15 +83,7 @@ class Mahasiswa extends CI_Controller
 
 	function hapus($nik)
 	{
-		$this->m_mahasiswa->HapusMahasiswa($nik);
+		$this->M_mahasiswa->HapusMahasiswa($nik);
 		redirect('index.php/mahasiswa');
-	}
-
-	function dashboard()
-	{
-		$this->load->view('template/header');
-		$this->load->view('template/sidebar');
-		$this->load->view('dashboard');
-		$this->load->view('template/footer');
 	}
 }

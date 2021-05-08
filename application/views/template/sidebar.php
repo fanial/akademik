@@ -54,13 +54,14 @@
                 <ul class="sidebar-menu" data-widget="tree">
                     <li class="header">SIMAK 2021</li>
                     <!-- Optionally, you can add icons to the links -->
-                    <li class=""><a href="<?php echo base_url() ?>index.php/mahasiswa/dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+                    <li class=""><a href="<?php echo base_url() ?>index.php/welcome/index"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
 
                     <li class=""><a href="<?php echo base_url() ?>index.php/mahasiswa/index"><i class="fa fa-graduation-cap"></i> <span>Mahasiswa</span></a></li>
 
+                    <li class=""><a href="<?php echo base_url() ?>index.php/jurusan/index"><i class="fa fa-university"></i> <span>Jurusan</span></a></li>
+
                     <li class=""><a href="<?php echo base_url() ?>dosen.php"><i class="fa fa-users"></i> <span>Dosen</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>jur.php"><i class="fa fa-university"></i> <span>Jurusan</span></a></li>
 
                     <li class=""><a href="<?php echo base_url() ?>matkul.php"><i class="fa fa-book"></i> <span>Jadwal Kuliah</span></a></li>
 
