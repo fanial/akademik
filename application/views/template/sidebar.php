@@ -65,9 +65,9 @@
 
                     <li class=""><a href="<?= base_url() ?>index.php/matkul/index"><i class="fa fa-book"></i> <span>Jadwal Kuliah</span></a></li>
 
-                    <li class=""><a href="<?= base_url() ?>gantipw.php"><i class="fa fa-lock"></i> <span>Ganti Password</span></a></li>
+                    <!-- <li class=""><a href="<?= base_url() ?>gantipw.php"><i class="fa fa-lock"></i> <span>Ganti Password</span></a></li>
 
-                    <li class=""><a href="<?= base_url() ?>logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li>
+                    <li class=""><a href="<?= base_url() ?>logout.php"><i class="fa fa-sign-out"></i> <span>Logout</span></a></li> -->
                 </ul>
                 <!-- /.sidebar-menu -->
             </section>

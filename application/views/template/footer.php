@@ -5,7 +5,7 @@
         Anything you want
     </div>
     <!-- Default to the left -->
-    <strong>Copyright &copy; 2021 <a href="https://github.com/fanial">Fani Aghistiya Lestari</a>.</strong> All rights reserved.
+    <strong>Copyright &copy; 2021 <a href="https://github.com/fanial/akademik">Rekayasa Perangkat Lunak 20</a>.</strong> STMIK Mardira Indonesia
 </footer>
 
 <!-- REQUIRED JS SCRIPTS -->
