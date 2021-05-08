@@ -60,7 +60,7 @@
 
                     <li class=""><a href="<?php echo base_url() ?>index.php/jurusan/index"><i class="fa fa-university"></i> <span>Jurusan</span></a></li>
 
-                    <li class=""><a href="<?php echo base_url() ?>dosen.php"><i class="fa fa-users"></i> <span>Dosen</span></a></li>
+                    <li class=""><a href="<?php echo base_url() ?>index.php/dosen/index"><i class="fa fa-users"></i> <span>Dosen</span></a></li>
 
 
                     <li class=""><a href="<?php echo base_url() ?>matkul.php"><i class="fa fa-book"></i> <span>Jadwal Kuliah</span></a></li>

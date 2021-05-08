@@ -20,46 +20,26 @@
                     </div>
                     <!-- /.box-header -->
                     <!-- form start -->
-                    <form action="<?php echo base_url() ?>index.php/mahasiswa/simpan_mahasiswa" method="post" role="form">
+                    <form action="<?php echo base_url() ?>index.php/dosen/simpan_dosen" method="post" role="form">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="nik">NIK</label>
-                                <input type="text" class="form-control" name="nik" placeholder="NIK">
+                                <label for="id_dosen">ID Dosen</label>
+                                <input type="text" class="form-control" name="id_dosen" placeholder="ID Dosen">
                             </div>
                             <div class="form-group">
-                                <label for="nama">Nama Lengkap</label>
-                                <input type="text" class=" form-control" name="nama" placeholder="Nama Lengkap ">
+                                <label for="nama_dosen">Nama Lengkap</label>
+                                <input type="text" class=" form-control" name="nama_dosen" placeholder="Nama Lengkap ">
                             </div>
                             <div class="form-group">
-                                <label for="nama">Jenis Kelamin</label>
-                                <div class="form-check">
-
-                                    <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="jk" value="1"> Laki-laki
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-                                        <input type="radio" class="form-check-input" name="jk" value="2"> Perempuan
-                                    </label>
-                                </div>
+                                <label for="umur">No. Telp.</label>
+                                <input type="text" class="form-control" name="tlp" placeholder="No. Telp">
                             </div>
                             <div class="form-group">
-                                <label for="tanggal_lhr">Tanggal Lahir</label>
-                                <input type="date" class="form-control" name="tanggal_lhr">
-                            </div>
-                            <div class="form-group">
-                                <label for="umur">Umur</label>
-                                <input type="text" class="form-control" name="umur" placeholder="Umur">
-                            </div>
-                            <div class="form-group">
-                                <label for="jurusan">Pilih Jurusan</label>
-                                <select class="form-control" name="jurusan">
-                                    <option value="TI">Teknik Informatika</option>
-                                    <option value="SI">Sistem Informasi</option>
-                                    <option value="TK">Teknik Komputer</option>
-                                    <option value="MI">Manajemen Informatika</option>
-                                    <option value="KA">Komputerisasi Akuntansi</option>
+                                <label for="jabatan">Jabatan</label>
+                                <select class="form-control" name="jabatan">
+                                    <option value="Kaprodi">Kaprodi</option>
+                                    <option value="Dosen">Dosen</option>
+                                    <option value="Staff">Staff</option>
                                 </select>
                             </div>
 
