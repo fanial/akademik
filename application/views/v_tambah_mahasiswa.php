@@ -23,8 +23,8 @@
                     <form action="<?php echo base_url() ?>index.php/mahasiswa/simpan_mahasiswa" method="post" role="form">
                         <div class="box-body">
                             <div class="form-group">
-                                <label for="nik">NIK</label>
-                                <input type="text" class="form-control" name="nik" placeholder="NIK">
+                                <label for="nim">NIM</label>
+                                <input type="text" class="form-control" name="nim" placeholder="Nomor Induk Mahasiswa">
                             </div>
                             <div class="form-group">
                                 <label for="nama">Nama Lengkap</label>

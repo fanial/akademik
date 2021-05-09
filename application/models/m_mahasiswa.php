@@ -3,18 +3,18 @@ class M_mahasiswa extends CI_Model
 {
     function TampilMahasiswa()
     {
-        $this->db->order_by('nik', 'ASC');
+        $this->db->order_by('nim', 'ASC');
         return $this->db->from('mahasiswa')
             ->get()
             ->result();
     }
 
-    function GetNik($nik = '')
+    function GetNim($nim = '')
     {
-        return $this->db->get_where('mahasiswa', array('nik' => $nik))->row();
+        return $this->db->get_where('mahasiswa', array('nim' => $nim))->row();
     }
-    function HapusMahasiswa($nik)
+    function HapusMahasiswa($nim)
     {
-        $this->db->delete('mahasiswa', array('nik' => $nik));
+        $this->db->delete('mahasiswa', array('nim' => $nim));
     }
 }

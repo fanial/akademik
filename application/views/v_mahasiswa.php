@@ -55,14 +55,14 @@
                                 ?>
                                     <tr>
                                         <td><?php echo $no; ?></td>
-                                        <td><?php echo $item->nik; ?></td>
+                                        <td><?php echo $item->nim; ?></td>
                                         <td><?php echo $item->nama; ?></td>
                                         <td><?php echo $jk; ?></td>
                                         <td><?php echo $item->tanggal_lhr; ?></td>
                                         <td><?php echo $item->jurusan; ?></td>
                                         <td><?php echo $item->umur; ?></td>
-                                        <td> <a href="<?php echo base_url() ?>mahasiswa/update/<?php echo $item->nik; ?>" class="btn btn-warning" role="button">Update</a></td>
-                                        <td> <a href="<?php echo base_url() ?>mahasiswa/hapus/<?php echo $item->nik; ?>" class="btn btn-danger" role="button">Delete</a></td>
+                                        <td> <a href="<?php echo base_url() ?>mahasiswa/update/<?php echo $item->nim; ?>" class="btn btn-warning" role="button">Update</a></td>
+                                        <td> <a href="<?php echo base_url() ?>mahasiswa/hapus/<?php echo $item->nim; ?>" class="btn btn-danger" role="button">Delete</a></td>
                                     </tr>
                                 <?php
                                     $no++;

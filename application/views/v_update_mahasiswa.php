@@ -4,7 +4,7 @@
     <section class="content-header">
         <h1>
             Mahasiswa
-            <small>Update mahasiswa #<?php echo $ambil->nik; ?></small>
+            <small>Update mahasiswa #<?php echo $ambil->nim; ?></small>
         </h1>
 
 
@@ -27,7 +27,7 @@
                     <div class="box-body table-responsive no-padding">
                         <form action="<?php echo base_url() ?>index.php/mahasiswa/simpan_update" method="post">
                             <div class="box-body">
-                                <input type="hidden" name="nik" value="<?php echo $ambil->nik; ?>" />
+                                <input type="hidden" name="nim" value="<?php echo $ambil->nim; ?>" />
 
                                 <div class="form-group">
                                     <label for="nama">Nama Lengkap</label>

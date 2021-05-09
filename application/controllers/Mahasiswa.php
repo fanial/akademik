@@ -45,7 +45,7 @@ class Mahasiswa extends CI_Controller
 	function simpan_mahasiswa()
 	{
 		$data = array(
-			'nik' => $this->input->post('nik'),
+			'nim' => $this->input->post('nim'),
 			'nama' => $this->input->post('nama'),
 			'jk' => $this->input->post('jk'),
 			'tanggal_lhr' => $this->input->post('tanggal_lhr'),
@@ -56,9 +56,9 @@ class Mahasiswa extends CI_Controller
 		redirect('index.php/mahasiswa/index');
 	}
 
-	function update($nik)
+	function update($nim)
 	{
-		$data['ambil'] = $this->M_mahasiswa->GetNik($nik);
+		$data['ambil'] = $this->M_mahasiswa->GetNim($nim);
 		$this->load->view('template/header');
 		$this->load->view('template/sidebar');
 		$this->load->view('v_update_mahasiswa', $data);
@@ -75,15 +75,15 @@ class Mahasiswa extends CI_Controller
 			'jurusan' => $this->input->post('jurusan'),
 			'umur' => $this->input->post('umur')
 		);
-		$nik = $this->input->post('nik');
-		$this->db->where('nik', $nik);
+		$nim = $this->input->post('nim');
+		$this->db->where('nim', $nim);
 		$this->db->update('mahasiswa', $data);
 		redirect('index.php/mahasiswa');
 	}
 
-	function hapus($nik)
+	function hapus($nim)
 	{
-		$this->M_mahasiswa->HapusMahasiswa($nik);
+		$this->M_mahasiswa->HapusMahasiswa($nim);
 		redirect('index.php/mahasiswa');
 	}
 }
