@@ -2,7 +2,9 @@
 Dashboard Sistem Akademik
 ###################
 
-This application was created as a learning project, will continue to be updated to become a perfect application. Sorry if there are bugs or errors, because the application is still in the development stage. No trading or commercial purposes, thank you.
+This application was created as a learning project, will continue to be updated to become a perfect application. Sorry if there are bugs or errors, because the application is still in the development stage. No trading or commercial purposes, thank you. 
+
+Copyright https://github.com/fanial/akademik
 
 *******************
 Release Information
